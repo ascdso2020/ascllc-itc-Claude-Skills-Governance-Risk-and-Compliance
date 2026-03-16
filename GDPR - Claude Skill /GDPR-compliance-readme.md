@@ -182,8 +182,8 @@ The skill covers the full regulation across these key areas:
 
 ## Author
 
-**Hemant**
-Built using the Claude Skill Creator framework with Claude Sonnet.
+**Hemant Naik**
+[LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 Skill version: 1.0 — March 2026.
 
 > ⚠️ **Disclaimer**: This skill provides informational guidance based on the GDPR text and

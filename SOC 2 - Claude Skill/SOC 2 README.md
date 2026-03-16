@@ -173,6 +173,5 @@ The skill was built using the following inputs:
 
 ## 6. Author
 
-**Hemant**
-Built using Claude (claude-sonnet-4-6) with the Claude skill creator framework.
-March 2026
+**Hemant Naik**
+[LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)

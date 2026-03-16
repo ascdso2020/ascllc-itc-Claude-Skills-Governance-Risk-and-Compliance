@@ -173,6 +173,6 @@ The skill was authored using the **Claude Skill Creator** framework, which struc
 
 ## Author
 
-**Hemant**
-Built with Claude using the Claude Skill Creator framework.
+**Hemant Naik**
+[LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 March 2026

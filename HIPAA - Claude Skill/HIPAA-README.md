@@ -185,7 +185,7 @@ The skill was built based on the following requirements provided during design:
 
 ## Author
 
-**Hemant**
-Built with Claude — March 2025
+**Hemant Naik**
+[LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 
 *Skill created using the Claude Skill framework. Reference content is based on 45 CFR Parts 160 and 164 and HHS guidance current as of the build date. Always verify against the latest HHS publications and consult legal counsel for formal compliance determinations.*
