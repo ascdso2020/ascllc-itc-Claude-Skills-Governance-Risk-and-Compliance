@@ -1,6 +1,6 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
 
-> Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, and HIPAA — powered by Claude Skills.
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, and HIPAA — powered by Claude Skills.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Skills: 5](https://img.shields.io/badge/Skills-5-green.svg)](#the-skills)
