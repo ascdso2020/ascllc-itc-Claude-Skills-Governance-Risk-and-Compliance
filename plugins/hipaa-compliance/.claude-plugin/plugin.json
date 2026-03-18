@@ -9,5 +9,7 @@
   "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
   "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
   "license": "MIT",
-  "keywords": ["hipaa", "phi", "healthcare", "baa", "privacy-rule", "security-rule", "grc"]
+  "category": "compliance",
+  "keywords": ["hipaa", "phi", "healthcare", "baa", "privacy-rule", "security-rule", "grc"],
+  "skills": ["./skills/hipaa-compliance"]
 }

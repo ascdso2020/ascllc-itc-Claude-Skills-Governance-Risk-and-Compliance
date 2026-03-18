@@ -9,5 +9,7 @@
   "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
   "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
   "license": "MIT",
-  "keywords": ["iso27001", "isms", "compliance", "security", "grc", "gap-analysis", "annex-a"]
+  "category": "compliance",
+  "keywords": ["iso27001", "isms", "compliance", "security", "grc", "gap-analysis", "annex-a"],
+  "skills": ["./skills/iso27001"]
 }

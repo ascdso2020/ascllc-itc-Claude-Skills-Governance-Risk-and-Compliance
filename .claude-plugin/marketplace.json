@@ -1,13 +1,10 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "grc-skills",
+  "description": "Claude Code skills for Governance, Risk & Compliance — ISO 27001, SOC 2, FedRAMP, GDPR, and HIPAA.",
   "owner": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"
-  },
-  "metadata": {
-    "description": "Claude Code skills for Governance, Risk & Compliance — ISO 27001, SOC 2, FedRAMP, GDPR, and HIPAA.",
-    "version": "0.1.0",
-    "pluginRoot": "./plugins"
   },
   "plugins": [
     {
@@ -20,10 +17,9 @@
         "email": "hemant.naik@gmail.com"
       },
       "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
-      "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
-      "license": "MIT",
       "category": "compliance",
-      "keywords": ["iso27001", "isms", "compliance", "security", "grc", "gap-analysis", "annex-a"]
+      "keywords": ["iso27001", "isms", "compliance", "security", "grc", "gap-analysis", "annex-a"],
+      "skills": ["./plugins/iso27001/skills/iso27001"]
     },
     {
       "name": "soc2",
@@ -35,10 +31,9 @@
         "email": "hemant.naik@gmail.com"
       },
       "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
-      "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
-      "license": "MIT",
       "category": "compliance",
-      "keywords": ["soc2", "aicpa", "trust-services", "audit", "compliance", "grc"]
+      "keywords": ["soc2", "aicpa", "trust-services", "audit", "compliance", "grc"],
+      "skills": ["./plugins/soc2/skills/soc2"]
     },
     {
       "name": "fedramp",
@@ -50,10 +45,9 @@
         "email": "hemant.naik@gmail.com"
       },
       "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
-      "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
-      "license": "MIT",
       "category": "compliance",
-      "keywords": ["fedramp", "nist", "ato", "ssp", "poam", "federal", "cloud-security", "grc"]
+      "keywords": ["fedramp", "nist", "ato", "ssp", "poam", "federal", "cloud-security", "grc"],
+      "skills": ["./plugins/fedramp/skills/fedramp"]
     },
     {
       "name": "gdpr-compliance",
@@ -65,10 +59,9 @@
         "email": "hemant.naik@gmail.com"
       },
       "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
-      "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
-      "license": "MIT",
       "category": "compliance",
-      "keywords": ["gdpr", "privacy", "data-protection", "dpa", "dpia", "eu", "grc"]
+      "keywords": ["gdpr", "privacy", "data-protection", "dpa", "dpia", "eu", "grc"],
+      "skills": ["./plugins/gdpr-compliance/skills/gdpr-compliance"]
     },
     {
       "name": "hipaa-compliance",
@@ -80,10 +73,9 @@
         "email": "hemant.naik@gmail.com"
       },
       "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
-      "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
-      "license": "MIT",
       "category": "compliance",
-      "keywords": ["hipaa", "phi", "healthcare", "baa", "privacy-rule", "security-rule", "grc"]
+      "keywords": ["hipaa", "phi", "healthcare", "baa", "privacy-rule", "security-rule", "grc"],
+      "skills": ["./plugins/hipaa-compliance/skills/hipaa-compliance"]
     }
   ]
 }
