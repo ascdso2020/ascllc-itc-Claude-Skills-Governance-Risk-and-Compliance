@@ -1,0 +1,23 @@
+{
+  "name": "nist-csf",
+  "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor — gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist-csf",
+    "cybersecurity-framework",
+    "csf20",
+    "risk-management",
+    "cybersecurity",
+    "grc",
+    "gap-assessment",
+    "profiles",
+    "tiers"
+  ]
+}

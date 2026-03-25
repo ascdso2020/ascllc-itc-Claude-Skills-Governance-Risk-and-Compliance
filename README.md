@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, and HIPAA — powered by Claude Skills. 
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, and NIST CSF — powered by Claude Skills.
 
 Benchmarked across 10 test cases (2 per framework) using eval framework — each graded against 7 verifiable assertions by independent agents. Skills scored **99% ± 4%** vs a baseline of 93% ± 7%.
 
 [![Release: v0.1.0](https://img.shields.io/badge/Release-v0.1.0-brightgreen.svg)](../../releases/tag/v0.1.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 5](https://img.shields.io/badge/Skills-5-green.svg)](#the-skills)
+[![Skills: 6](https://img.shields.io/badge/Skills-6-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 
 ---
@@ -20,6 +20,7 @@ Benchmarked across 10 test cases (2 per framework) using eval framework — each
   - [FedRAMP](#-fedramp)
   - [GDPR](#-gdpr)
   - [HIPAA](#-hipaa)
+  - [NIST CSF](#-nist-csf)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -153,6 +154,25 @@ The HIPAA skill turns Claude into a knowledgeable HIPAA compliance advisor cover
 
 ---
 
+### 🛡️ NIST CSF
+
+**File:** `NIST Cybersecurity framework - Claude Skill/NIST Cybersecurity.skill`
+
+The NIST CSF skill turns Claude into an expert NIST Cybersecurity Framework advisor covering both **CSF 2.0** (February 2024) and **CSF 1.1** (April 2018), defaulting to the current CSF 2.0. It covers all six functions — **Govern, Identify, Protect, Detect, Respond, Recover** — including the new Govern function introduced in CSF 2.0.
+
+**What it does:**
+- Conducts structured **gap assessments** across all six CSF 2.0 functions, categories, and subcategories
+- Builds **Organisational Profiles** — Current and Target — aligned to business context, risk tolerance, and regulatory obligations
+- Assesses **Implementation Tiers** (1–4) across three dimensions and provides targeted advancement guidance
+- Creates **prioritised implementation roadmaps** with phased 30/60/90-day and strategic actions
+- **Maps CSF subcategories** to NIST SP 800-53, ISO 27001:2022, and CIS Controls v8
+- Generates **policies aligned to CSF functions** — governance policy, incident response, data security, access control, and more
+- Guides **CSF 1.1 → CSF 2.0 migration** with a detailed subcategory mapping and migration checklist
+
+**Trigger phrases:** `NIST CSF`, `Cybersecurity Framework`, `CSF 2.0`, `Govern function`, `GV.SC`, `ID.AM`, `PR.AA`, `DE.CM`, `RS.MA`, `RC.RP`, `cybersecurity profile`, `implementation tiers`, `CSF gap assessment`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -173,6 +193,12 @@ The HIPAA skill turns Claude into a knowledgeable HIPAA compliance advisor cover
 | Preparing a risk register and treatment plan for an ISMS | ISO 27001 |
 | Transitioning from ISO 27001:2013 to ISO 27001:2022 | ISO 27001 |
 | Preparing for a FedRAMP Rev 4 → Rev 5 transition | FedRAMP |
+| Assessing current cybersecurity posture using NIST CSF 2.0 | NIST CSF |
+| Building a CSF organisational profile with Current and Target states | NIST CSF |
+| Advancing from CSF Implementation Tier 1 to Tier 2 | NIST CSF |
+| Migrating a cybersecurity programme from CSF 1.1 to CSF 2.0 | NIST CSF |
+| Mapping ISO 27001 or SOC 2 controls to NIST CSF subcategories | NIST CSF + ISO 27001 / SOC 2 |
+| Writing a Cybersecurity Governance Policy aligned to the CSF GV function | NIST CSF |
 
 ---
 
@@ -187,6 +213,7 @@ The HIPAA skill turns Claude into a knowledgeable HIPAA compliance advisor cover
    | 🏛️ FedRAMP | [fedramp.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/FedRamp%20-%20Claude%20Skill/fedramp.skill) |
    | 🇪🇺 GDPR | [gdpr-compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/GDPR%20-%20Claude%20Skill/gdpr-compliance.skill) |
    | 🏥 HIPAA | [hipaa-compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill) |
+   | 🛡️ NIST CSF | [NIST Cybersecurity.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST%20Cybersecurity.skill) |
 
 2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
@@ -206,7 +233,7 @@ Add the marketplace and install the skills you need directly from the terminal:
 
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills
 ```
 
 Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.
