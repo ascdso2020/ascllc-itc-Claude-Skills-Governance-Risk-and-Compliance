@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, and PCI DSS — powered by Claude Skills.
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, and TSA Cybersecurity — powered by Claude Skills.
 
 Benchmarked across 10 test cases (2 per framework) using eval framework — each graded against 7 verifiable assertions by independent agents. Skills scored **99% ± 4%** vs a baseline of 93% ± 7%.
 
 [![Release: v0.1.0](https://img.shields.io/badge/Release-v0.1.0-brightgreen.svg)](../../releases/tag/v0.1.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 7](https://img.shields.io/badge/Skills-7-green.svg)](#the-skills)
+[![Skills: 8](https://img.shields.io/badge/Skills-8-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 
 ---
@@ -22,6 +22,7 @@ Benchmarked across 10 test cases (2 per framework) using eval framework — each
   - [HIPAA](#-hipaa)
   - [NIST CSF](#-nist-csf)
   - [PCI DSS](#-pci-dss)
+  - [TSA Cybersecurity](#-tsa-cybersecurity)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -193,6 +194,27 @@ The PCI DSS skill turns Claude into an expert PCI DSS compliance advisor coverin
 
 ---
 
+### 🚨 TSA Cybersecurity
+
+**File:** `TSA Compliance - Claude Skill/TSA-Compliance.skill`
+
+The TSA Cybersecurity skill turns Claude into an expert TSA cybersecurity directive advisor for **critical transportation infrastructure**. It covers all current TSA Security Directive series — **SD Pipeline-2021-01G**, **SD Pipeline-2021-02F**, **SD 1580-21-01E** (freight rail), and **SD 1582-21-01E** (transit/passenger rail) — plus the **November 2024 NPRM** proposing to formalise these directives as permanent federal regulations.
+
+> **Note on SSI:** TSA Security Directives are classified as **Sensitive Security Information (SSI)** under 49 CFR Part 1520. This skill is built from publicly available summaries, Federal Register notices, and DHS/CISA publications — not the classified full directive text. Covered entities receive the actual directive directly from TSA.
+
+**What it does:**
+- **Determines applicability** — which directive series applies to your organisation (pipeline, freight rail, transit, or bus) and what that means for your compliance obligations
+- Runs structured **gap assessments** across the four technical domains: IT/OT network segmentation, access controls (MFA), continuous monitoring, and patch management
+- **Drafts Cyber Risk Management Program (CRMP) documents**: Cybersecurity Implementation Plan (CIP/COIP), Incident Response Plan (IRP), Architecture Design Review (ADR), and Cybersecurity Assessment Plan (CAP)
+- Guides **OT/ICS-specific implementation** — data diodes, jump servers for legacy HMIs, passive monitoring tools (Claroty, Dragos, Nozomi), OT patch lifecycle with vendor coordination
+- Explains **24-hour CISA incident reporting** obligations: what qualifies, how to report, sample initial report language, and CIRCIA overlap
+- Advises on **annual IRP testing** — two objectives minimum, test scenarios, documentation requirements, and after-action review process
+- Explains the **2024 NPRM** impact: NIST CSF 2.0 alignment, CISA CPG baseline, proposed COIP structure, and what changes when the rule is finalised
+
+**Trigger phrases:** `TSA Security Directive`, `SD Pipeline-2021`, `SD 1580-21-01`, `SD 1582-21-01`, `TSA cybersecurity`, `Critical Cyber Systems`, `CCS`, `Cybersecurity Coordinator`, `Cybersecurity Implementation Plan`, `CIP`, `CRMP`, `IRP testing`, `Architecture Design Review`, `ADR`, `CAP`, `CISA 24-hour reporting`, `OT segmentation TSA`, `pipeline cybersecurity`, `rail cybersecurity directive`, `transit cybersecurity`, `TSA NPRM 2024`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -225,6 +247,14 @@ The PCI DSS skill turns Claude into an expert PCI DSS compliance advisor coverin
 | Implementing the new PCI DSS v4.0 payment page script integrity requirements | PCI DSS |
 | Extending MFA to all CDE access per Req 8.4.2 | PCI DSS |
 | Managing third-party service providers under PCI DSS Req 12.8 | PCI DSS |
+| Determining whether your pipeline or rail operation is a TSA covered entity | TSA Cybersecurity |
+| Drafting a Cybersecurity Implementation Plan (CIP) for pipeline OT/SCADA environments | TSA Cybersecurity |
+| Planning and documenting annual IRP testing for TSA directive compliance | TSA Cybersecurity |
+| Responding to ransomware on IT that may spread to OT — reporting obligations to CISA | TSA Cybersecurity |
+| Conducting an Architecture Design Review (ADR) for IT/OT network segmentation | TSA Cybersecurity |
+| Implementing MFA and PAM for legacy OT/HMI systems with limited native controls | TSA Cybersecurity |
+| Understanding what changes if TSA's November 2024 NPRM becomes final regulation | TSA Cybersecurity |
+| Aligning a TSA CRMP to NIST CSF 2.0 and CISA Cross-Sector CPGs | TSA Cybersecurity + NIST CSF |
 
 ---
 
@@ -241,6 +271,7 @@ The PCI DSS skill turns Claude into an expert PCI DSS compliance advisor coverin
    | 🏥 HIPAA | [hipaa-compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill) |
    | 🛡️ NIST CSF | [NIST Cybersecurity.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST%20Cybersecurity.skill) |
    | 💳 PCI DSS | [PCI-Compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill) |
+   | 🚨 TSA Cybersecurity | [TSA-Compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance.skill) |
 
 2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
@@ -260,7 +291,7 @@ Add the marketplace and install the skills you need directly from the terminal:
 
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills
 ```
 
 Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.
