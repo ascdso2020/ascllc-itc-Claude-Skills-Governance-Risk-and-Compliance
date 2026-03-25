@@ -1,0 +1,22 @@
+{
+  "name": "iso42001",
+  "description": "ISO 42001 AI Management System (AIMS) advisor — gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "iso42001",
+    "ai-management-system",
+    "aims",
+    "responsible-ai",
+    "ai-governance",
+    "ai-risk",
+    "aisia",
+    "grc"
+  ]
+}

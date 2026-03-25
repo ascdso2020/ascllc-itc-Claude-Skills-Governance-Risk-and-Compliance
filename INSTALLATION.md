@@ -1,6 +1,6 @@
 # Installation Guide — GRC Skills for Claude Code
 
-This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides eight compliance skills as Claude Code plugins — each one extends Claude Code with deep, framework-specific expertise for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, and TSA Cybersecurity.
+This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides nine compliance skills as Claude Code plugins — each one extends Claude Code with deep, framework-specific expertise for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, and ISO 42001 AI Management System.
 
 ---
 
@@ -72,16 +72,20 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install tsa-compliance@grc-skills
 ```
 
+```shell
+/plugin install iso42001@grc-skills
+```
+
 Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activates immediately in new Claude Code sessions.
 
 ---
 
-## 3. Install All Eight at Once
+## 3. Install All Nine at Once
 
 To install the full GRC suite in a single command:
 
 ```shell
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills
 ```
 
 ---
@@ -110,12 +114,13 @@ Add the following to your project's `.claude/settings.json`:
     "hipaa-compliance@grc-skills": true,
     "nist-csf@grc-skills": true,
     "pci-compliance@grc-skills": true,
-    "tsa-compliance@grc-skills": true
+    "tsa-compliance@grc-skills": true,
+    "iso42001@grc-skills": true
   }
 }
 ```
 
-Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all eight.
+Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all nine.
 
 ---
 
@@ -163,6 +168,7 @@ To remove the marketplace entirely:
 | `nist-csf` | NIST CSF 2.0 / 1.1 | Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping |
 | `pci-compliance` | PCI DSS v4.0.1 | CDE scoping, SAQ selection, gap assessments, control guidance, QSA audit prep, remediation planning |
 | `tsa-compliance` | TSA Security Directives | Pipeline, freight rail, and transit OT/ICS cybersecurity — CIP/COIP, IRP, ADR, CAP, incident reporting, NPRM guidance |
+| `iso42001` | ISO/IEC 42001:2023 | AI Management System gap analysis, AISIA, AI risk assessment, SoA, policy generation, and certification readiness |
 
 ---
 
