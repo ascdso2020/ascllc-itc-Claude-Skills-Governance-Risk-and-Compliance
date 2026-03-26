@@ -184,7 +184,7 @@ The skill covers the full regulation across these key areas:
 
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
-Skill version: 0.1.0 — March 2026.
+Skill version: 0.2.0 — March 2026.
 
 > ⚠️ **Disclaimer**: This skill provides informational guidance based on the GDPR text and
 > established regulatory guidance (EDPB/ICO). It does not constitute legal advice. For matters
