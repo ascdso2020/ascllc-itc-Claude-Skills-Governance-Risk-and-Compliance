@@ -37,8 +37,6 @@ Benchmarked across 18 test cases (2 per framework) using the eval framework — 
 
 ## What Are Claude Skills?
 
-[![Watch the demo](https://img.youtube.com/vi/-IBLNR0N2vE/maxresdefault.jpg)](https://youtu.be/-IBLNR0N2vE)
-
 Claude Skills are installable knowledge packages that extend Claude's capabilities for specific domains. A skill is a `.skill` file — a bundled archive containing a `SKILL.md` instruction file and optional reference materials — that you upload to Claude once and use across all your conversations.
 
 Once installed, a skill activates **automatically** when your conversation touches its topic area. You don't need to invoke it by name or use special commands. Claude simply becomes a deeper expert in that domain for the duration of your session.
@@ -49,6 +47,10 @@ Once installed, a skill activates **automatically** when your conversation touch
 - Domain knowledge that goes beyond general LLM training — such as knowing which specific NIST 800-53 controls apply to a given scenario, or which GDPR articles govern international data transfers
 
 **How skills work under the hood:** Each `.skill` file contains a primary `SKILL.md` that is loaded into Claude's context when the skill triggers, plus reference files that are loaded on demand for deeper sub-topics. This "progressive disclosure" pattern keeps context usage efficient while making comprehensive knowledge available when needed.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;">
+  <iframe src="https://www.youtube.com/embed/-IBLNR0N2vE" title="Claude Skills for GRC Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
 
 ---
 
